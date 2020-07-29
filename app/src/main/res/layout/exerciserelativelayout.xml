@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <Button
+        android:id="@+id/btnone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="One"
+        android:background="#FFEB3B"/>
+    <Button
+        android:id="@+id/btntwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Two"
+        android:textSize="35sp"
+        android:background="#E80A0A"
+        android:layout_below="@+id/btnone"
+        />
+    <Button
+        android:id="@+id/btnthree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Three"
+        android:textSize="35sp"
+        android:background="#E10D0D"
+        android:layout_toRightOf="@+id/btntwo"
+        android:layout_below="@+id/btnone"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnone"
+        android:layout_toRightOf="@id/btnthree"
+        android:background="#2196F3"
+        android:text="Linearlayout"
+        android:textSize="35sp" />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/flower"
+        android:scaleType="fitXY"
+        android:layout_below="@id/btnthree"
+        android:contentDescription="@string/app_name"/>
+
+</RelativeLayout>
